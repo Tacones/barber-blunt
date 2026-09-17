@@ -43,7 +43,7 @@ header {
 }
 
 .logo span {
-    color: #d4af37; /* Detalhe dourado elegante */
+    color: #d4af37;
 }
 
 nav a {
@@ -105,6 +105,13 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
 .btn-primary {
     background-color: #25d366;
     color: #ffffff;
@@ -123,6 +130,26 @@ nav a:hover {
 .btn-primary:hover {
     transform: translateY(-2px);
     background-color: #1ebe5d;
+}
+
+.btn-instagram-hero {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
+}
+
+.btn-instagram-hero:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
 }
 
 /* About Section */
@@ -146,6 +173,180 @@ nav a:hover {
     padding-left: 12px;
 }
 
+.about-text p {
+    color: #aaaaaa;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #333333;
+}
+
+.info-item i {
+    font-size: 1.8rem;
+    color: #d4af37;
+}
+
+.info-item h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: #999999;
+    font-size: 0.9rem;
+}
+
+/* Services Section */
+.services {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2c2c2c;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.service-card.featured {
+    border-color: #d4af37;
+    background: linear-gradient(145deg, #1f1f1f, #161616);
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.8rem;
+    color: #d4af37;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.btn-card {
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #d4af37;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-card:hover {
+    background-color: #d4af37;
+    color: #121212;
+}
+
+/* Footer */
+footer {
+    background-color: #0d0d0d;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #222222;
+}
+
+.footer-content h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #888888;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.footer-social {
+    margin: 15px 0;
+}
+
+.social-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.social-link-btn:hover {
+    border-color: #dc2743;
+    color: #dc2743;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: #555555;
+    margin-top: 20px;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
 .about-text p {
     color: #aaaaaa;
     line-height: 1.6;
